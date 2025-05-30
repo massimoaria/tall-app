@@ -1,0 +1,134 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+page-layout: full
+---
+
+
+# Key Features of TALL
+
+**TALL (Text Analysis for All)** is a powerful and user-friendly R Shiny application designed to democratize access to advanced text mining tools. Built on the R ecosystem, TALL supports researchers, students, and professionals in performing quantitative and qualitative text analyses — without writing a single line of code.
+
+---
+
+## 🧠 TALL AI – Your AI-powered Text Analysis Assistant
+
+TALL now includes **TALL AI**, an integrated artificial intelligence assistant that enhances users' analytical experience by providing:
+
+- **Automated interpretation** of statistical results
+- **Critical discussion prompts** on detected patterns
+- **Conceptual guidance** during topic modeling, clustering, and sentiment analysis
+- **Contextual suggestions** to support exploration and hypothesis generation
+
+TALL AI is powered by cutting-edge LLMs and can be activated by connecting a free API key from Google Studio AI.
+
+---
+
+## 🚀 Complete and Guided Workflow
+
+From raw text to interpretative insight, TALL provides a structured workflow:
+
+1. **Import** text data from multiple formats (.txt, .csv, .bib, Wikipedia, Biblioshiny, etc.)
+2. **Pre-process** using integrated NLP tools (tokenization, lemmatization, PoS-tagging, semantic compression)
+3. **Analyze** through diverse modules: word frequencies, co-occurrences, correspondence analysis, clustering, topic modeling, sentiment analysis
+4. **Visualize & export** results for reports or reuse
+
+---
+
+## 🗂️ Text Import & Metadata Integration
+
+- Load raw texts or pre-tagged datasets
+- Import `.tall` structured files for session recovery
+- Direct export from **Biblioshiny**
+- Add metadata or split/group documents dynamically
+
+---
+
+## 🧹 Advanced Preprocessing Pipeline
+
+The preprocessing engine integrates:
+
+- **Universal Dependencies** based models (v2.15) for accurate PoS-tagging and lemmatization
+- **Support for 57 languages**, including specific variants for domains such as **social media**, **news**, and **scientific writing**, covering a total of **87 pre-trained models**
+- Semantic tagging of special entities and automatic **multi-word expression** creation
+- Customizable token/lemma filtering and grouping
+
+All preprocessing steps are modular, transparent, and reproducible, ensuring high-quality input for downstream analyses.
+
+---
+
+## 📊 Descriptive Statistics & Lexical Insights
+
+- Vocabulary and TF-IDF distributions
+- Word clouds
+- Word in Context (KWIC) and semantic ego-networks
+
+Users can explore specific terms in context, across documents and sentences.
+
+---
+
+## 📈 Topic Detection
+
+Multiple methods are available:
+
+- **Lexical Correspondence Analysis (LCA)**
+- **Hierarchical clustering (Tandem Analysis)**
+- **Latent Dirichlet Allocation (LDA)**
+- **Reinert Clustering**
+
+All methods include parameter tuning, model selection (e.g. CaoJuan index), and graphical outputs.
+
+---
+
+## 🌐 Network Analysis
+
+- Build **co-occurrence networks** from term/document matrices
+- Perform **community detection** using clustering algorithms
+- Analyze network metrics (centrality, density, modularity)
+- Explore networks of words, multi-words, emojis, or entities
+
+---
+
+## 😃 Sentiment & Polarity Detection
+
+Includes multiple lexicons:
+
+- Hu & Liu (general sentiment)
+- Loughran-McDonald (financial)
+- NRC Emotion Lexicon (emotional tones)
+
+TALL computes polarity scores with context-aware rules (negators, amplifiers, de-amplifiers) and logistic scaling.
+
+---
+
+## 📚 Summarization
+
+TALL uses **TextRank**, a graph-based extractive summarization algorithm that:
+
+- Ranks sentences by centrality in a similarity network
+- Produces adjustable summaries (concise or detailed)
+- Visualizes sentence relevance and structure
+
+---
+
+## 🧾 Reporting and Export
+
+- Save intermediate or final results in `.tall` files
+- Export graphs and tables in Excel or image formats
+- Automatically add results to a cumulative report
+
+---
+
+## 🔓 Open Source & Extensible
+
+TALL is fully open source and available on [GitHub](https://github.com/massimoaria/tall). Users are encouraged to contribute, report issues, or extend its capabilities.
+
+---
+
+## 🎯 Designed for Everyone
+
+Whether you are a linguist, data scientist, social scientist, or just exploring text analytics, **TALL** offers a robust, intuitive environment to uncover meaning in texts — now with **AI-powered guidance**.
+
+Ready to explore your texts? [Get started now!](index.qmd)

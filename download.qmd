@@ -1,0 +1,51 @@
+---
+title: "Download"
+format: html
+page-layout: full
+---
+
+```{=html}
+
+<div class="container my-5">
+  <h2 class="text-center fw-bold mb-4 text-success">📥 Install Instructions</h2>
+
+  <p class="text-center mb-5 text-muted">
+    TALL can be installed in two ways, depending on whether you want the stable version or the latest development version.<br>
+    Make sure to have the latest version of <a href="https://cran.r-project.org/" target="_blank"><strong>R</strong></a> installed.
+  </p>
+
+  <div class="row justify-content-center align-items-start g-5">
+    <!-- Stable version -->
+    <div class="col-md-5 text-center">
+      <i class="bi bi-download" style="font-size: 3rem; color: #4DB280;"></i>
+      <h4 class="fw-bold mt-3">Stable Version</h4>
+      <p class="text-muted small">
+        Official release from <a href="https://cran.r-project.org/" target="_blank">CRAN</a>, updated monthly.
+      </p>
+      <pre class="bg-light p-3 rounded text-start"><code>if (!require("pak", quietly=TRUE)) install.packages("pak")
+pak::pkg_install("tall")</code></pre>
+    </div>
+
+    <!-- Development version -->
+    <div class="col-md-5 text-center">
+      <i class="bi bi-download" style="font-size: 3rem; color: #4DB280;"></i>
+      <h4 class="fw-bold mt-3">Development Version</h4>
+      <p class="text-muted small">
+        Install the latest development version directly from GitHub.
+      </p>
+      <pre class="bg-light p-3 rounded text-start"><code>if (!require("pak", quietly=TRUE)) install.packages("pak")
+pak::pkg_install("massimoaria/tall")</code></pre>
+    </div>
+  </div>
+
+  <!-- Run TALL -->
+  <div class="mt-5 text-center aos-item" data-aos="fade-up">
+    <h5 class="fw-bold text-success mb-3">▶️ Run TALL</h5>
+    <pre class="bg-light p-3 rounded d-inline-block text-start"><code>library("tall")
+tall()</code></pre>
+  </div>
+</div>
+
+
+```
+

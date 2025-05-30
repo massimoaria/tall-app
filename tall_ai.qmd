@@ -1,0 +1,106 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+page-layout: full
+---
+
+# ✨ TALL AI – Interpreting Text, Intelligently
+
+**TALL AI** is the new artificial intelligence assistant embedded in the TALL ecosystem. It empowers users with automated interpretation and critical support across the entire text analysis pipeline — transforming data exploration into a guided reasoning process.
+
+------------------------------------------------------------------------
+
+## 🌍 Designed for All Disciplines
+
+Whether you’re analyzing political narratives, consumer reviews, scientific abstracts, or historical sources — TALL AI adapts to your needs and helps you **make sense of words at scale**.
+
+> <h4>*Discover what your texts are saying.*</h4>
+> <h4>*Let **TALL AI** help you hear them.*</h4>
+
+## 🧠 What is TALL AI?
+
+TALL AI is a large language model–based assistant designed to work in tandem with TALL’s analytical modules. Its main goal is to help users **understand**, **discuss**, and **critically reflect** on the outputs of their textual analyses — without requiring programming or domain-specific expertise.
+
+------------------------------------------------------------------------
+
+## 🎯 Key Capabilities
+
+TALL AI provides support across several stages of analysis:
+
+### 📊 Descriptive and Lexical Analysis
+
+-   Highlights **vocabulary distribution anomalies**
+-   Suggests **interpretations of lexical diversity and concentration**
+-   Flags **dominant linguistic patterns** (e.g., jargon, recurring constructs)
+
+### 📌 Topic Modeling & Clustering
+
+-   Labels **emergent clusters and topics** with clear summaries
+-   Connects results to broader **conceptual themes**
+-   Detects **semantic overlaps or drifts** across time, domains, or authorship
+
+### 🌐 Network Analysis
+
+-   Describes **network structure** (density, modularity, centrality)
+-   Interprets **semantic communities**
+-   Identifies **key connectors and thematic bridges**
+
+### 😊 Sentiment & Polarity Detection
+
+-   Explains sentiment trends
+-   Discusses the **meaning of polarized terms in context**
+-   Highlights **valence shifts** and emotional dynamics
+
+### 🧾 Summarization
+
+-   Suggests **critical readings** of summaries
+-   Flags **missing narrative elements**
+-   Helps **rephrase or refine** automated outputs
+
+------------------------------------------------------------------------
+
+## 🛠️ How It Works
+
+TALL AI is powered by **Google Gemini APIs**, integrated into TALL via a lightweight authentication layer. Users must:
+
+1.  Register at [Google Studio AI](https://makersuite.google.com/)
+2.  Generate a **free API key** for Gemini models
+3.  Enter the key in TALL's settings panel
+
+No advanced configuration is needed — just plug and play.
+
+------------------------------------------------------------------------
+
+## 🧪 Example Use Cases
+
+-   A **linguist** uses TALL AI to interpret co-occurrence networks from literary texts
+-   A **social scientist** receives AI-assisted summaries of clusters in political discourse
+-   A **student** explores AI-generated commentary on the sentiment polarity of tweets
+-   A **researcher** reflects on LDA outputs with labels and hypotheses suggested by TALL AI
+
+------------------------------------------------------------------------
+
+## 🔍 Why Use TALL AI?
+
+| Without TALL AI          | With TALL AI                               |
+|--------------------------|--------------------------------------------|
+| Raw tables and graphs    | Interpreted patterns and themes            |
+| Technical statistics     | Explained indicators and contextualization |
+| Trial-and-error labeling | Suggested cluster/topic labels             |
+| Manual sensemaking       | Guided exploratory reasoning               |
+
+TALL AI transforms **results into insight**.
+
+------------------------------------------------------------------------
+
+## 🔒 Privacy and Transparency
+
+-   No textual content is stored or reused by TALL AI
+-   API usage is always local and user-controlled
+-   Interpretations are **suggestions**, not deterministic outputs
+
+All interactions are **documented, optional, and reproducible**.
+
+[Back to Features →](features.qmd)

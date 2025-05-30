@@ -1,0 +1,116 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+page-layout: full
+---
+
+# 🧪 Use Cases
+
+This page showcases practical examples of how **TALL** can be used to explore and analyze text corpora across various domains. Each example illustrates a complete workflow — from data import to final interpretation — including optional use of **TALL AI** for insight generation.
+
+---
+
+## 1. 🎬 BBC News (Entertainment Headlines)
+
+**Goal**: Identify main topics and sentiment trends in news stories.
+
+### Dataset  
+386 short articles from the *Entertainment* section of the BBC News website (English language).
+
+### Workflow
+
+1. **Import** BBC dataset from sample collection
+2. **Preprocess** with tokenization, lemmatization, and entity tagging
+3. **Explore** vocabulary: term frequency, wordcloud, KWIC for terms like "actor", "award"
+4. **Apply LDA** to detect latent topics (e.g., celebrity deaths, film reviews)
+5. **Visualize polarity** across articles using the Hu & Liu lexicon
+6. **Summarize** key articles using TextRank
+
+![BBC topic modeling](img/example-bbc-lda.png)
+
+**TALL AI Support**: Suggests meaningful topic labels and provides narrative interpretation of polarity trends.
+
+---
+
+## 2. 📚 Bibliometrix Abstracts
+
+**Goal**: Extract conceptual structure and sentiment in bibliometric research.
+
+### Dataset  
+444 scientific abstracts citing the *Bibliometrix* R package, with metadata (authors, year, journal).
+
+### Workflow
+
+1. **Import** from `.bib` or Biblioshiny export
+2. **Tokenize + lemmatize** scientific vocabulary
+3. **Perform Correspondence Analysis (LCA)** to identify clusters of research themes
+4. **Apply Reinert Clustering** for topic segmentation
+5. **Build Co-occurrence Network** to map related concepts
+6. **Filter by metadata** (year, author, journal) for trend detection
+
+![Bibliometrix network](img/example-bibliometrix-network.png)
+
+**TALL AI Support**: Describes main research trends and offers critical reflection on emerging clusters.
+
+---
+
+## 3. 🐦 US Airlines Tweets
+
+**Goal**: Understand customer feedback and emotions in airline-related tweets.
+
+### Dataset  
+14,640 tweets about major U.S. airlines collected in February 2015.
+
+### Workflow
+
+1. **Import CSV** file with raw tweets
+2. **Preprocess** with domain-specific PoS model (social media language)
+3. **Tag special entities** like `@mentions`, `#hashtags`, `emojis`
+4. **Run Sentiment Analysis** with NRC Emotion Lexicon
+5. **Build Ego Network** around key terms (e.g., “delay”, “service”)
+6. **Cluster topics** via LCA + hierarchical analysis
+
+![US Airlines sentiment](img/example-tweets-polarity.png)
+
+**TALL AI Support**: Interprets emotions and proposes thematic summaries of clusters (e.g., delays, praise, complaints).
+
+---
+
+## 4. 🧾 Wikipedia Pages (Custom Import)
+
+**Goal**: Compare discourse structures across domains using open web sources.
+
+### Example  
+Import and compare Wikipedia pages about **climate change**, **sustainable tourism**, and **machine learning**.
+
+### Workflow
+
+1. **Import Wikipedia pages** using title input
+2. **Preprocess and tag** lemmas and entities
+3. **Create term × document matrix**
+4. **Run LDA** and visualize dominant topics
+5. **Compare lexical richness and structure** across articles
+
+![Wikipedia comparison](img/example-wikipedia-comparison.png)
+
+**TALL AI Support**: Identifies discursive strategies, labels overlapping themes, and suggests summary narratives.
+
+---
+
+## ✨ Your Own Use Case
+
+TALL is flexible and scalable for use in:
+
+- Social science research  
+- Digital humanities  
+- Public policy analysis  
+- Journalism and media studies  
+- Education and learning analytics  
+- Marketing and brand sentiment monitoring
+
+> Have a use case to share? [Contribute on GitHub](https://github.com/massimoaria/tall) or get in touch via the [About page](about_us.qmd).
+
+
+
