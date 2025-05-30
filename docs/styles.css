@@ -8,6 +8,7 @@ body {
     background: linear-gradient(to bottom right, #f9f9f9, #eeeeee);
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   
   /* Titoli */
@@ -132,10 +133,17 @@ body {
   padding: 1rem 0;
   margin-top: 3rem;
   text-align: center;
+
   width: 100%;
-}
-.site-footer .container {
   max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.site-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .site-footer a {
@@ -146,21 +154,6 @@ body {
 .site-footer a:hover {
   color: #ffffff;
   text-decoration: none;
-}
-
-.site-footer-full {
-  background: linear-gradient(to right, #4DB280, #8bd6ab);
-  color: #ffffff;
-  font-size: 1rem;
-  letter-spacing: 0.2px;
-  padding: 1rem 0;
-  text-align: center;
-  width: auto;
-  position: left;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
 }
 
 .feature-icon img {
