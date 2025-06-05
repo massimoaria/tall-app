@@ -1,51 +1,65 @@
 ---
-title: "Download"
-format: html
+title: ""
+format:
+  html:
+    toc: false
 page-layout: full
 ---
 
+## 🛠️ Installation
+
+**TALL** is an R package with an integrated Shiny interface. You can install it in just a few lines of code — either using the stable release from CRAN or the development version from GitHub.
+
+### ✅ System Requirements & Setup
+
+Before installing TALL, make sure the following components are correctly set up on your computer:
+
+1.  **Install R**  
+    TALL is built on the R programming language. You must have **R version 4.2.0 or higher** installed.  
+    👉 Download it from the official <a href="https://cran.r-project.org/" target="_blank" rel="noopener">CRAN R Project</a>
+
+2.  **(Recommended) Install RStudio**  
+    RStudio is a user-friendly interface for working with R. It is highly recommended for running TALL smoothly.  
+    👉 Download it from <a href="https://posit.co/download/rstudio/" target="_blank" rel="noopener">Posit RStudio Download</a>
+
+3.  **Ensure an Internet Connection**  
+    An active internet connection is required to install TALL and download its dependencies.
+
+4.  **Install TALL**  
+    You can install TALL using either the stable version from CRAN or the latest development version from GitHub:
+    
 ```{=html}
-
 <div class="container my-5">
-  <h2 class="text-center fw-bold mb-4 text-success">📥 Install Instructions</h2>
-
-  <p class="text-center mb-5 text-muted">
-    TALL can be installed in two ways, depending on whether you want the stable version or the latest development version.<br>
-    Make sure to have the latest version of <a href="https://cran.r-project.org/" target="_blank"><strong>R</strong></a> installed.
-  </p>
-
-  <div class="row justify-content-center align-items-start g-5">
+  <div class="row">
     <!-- Stable version -->
-    <div class="col-md-5 text-center">
-      <i class="bi bi-download" style="font-size: 3rem; color: #4DB280;"></i>
+    <div class="col-md-6 mb-4 text-center">
+      <i class="bi bi-check-circle" style="font-size: 3rem; color: #4DB280;"></i>
       <h4 class="fw-bold mt-3">Stable Version</h4>
       <p class="text-muted small">
-        Official release from <a href="https://cran.r-project.org/" target="_blank">CRAN</a>, updated monthly.
+        Official release available on <a href="https://cran.r-project.org/package=tall" target="_blank" rel="noopener">CRAN</a>, updated monthly.
       </p>
-      <pre class="bg-light p-3 rounded text-start"><code>if (!require("pak", quietly=TRUE)) install.packages("pak")
-pak::pkg_install("tall")</code></pre>
+      <pre class="bg-light p-3 rounded text-start"><code>if (!require("pak", quietly = TRUE)) install.packages("pak")
+pak::pkg_install("tall")
+
+# Run TALL
+library(tall)
+tall()</code></pre>
     </div>
 
     <!-- Development version -->
-    <div class="col-md-5 text-center">
-      <i class="bi bi-download" style="font-size: 3rem; color: #4DB280;"></i>
+    <div class="col-md-6 mb-4 text-center">
+      <i class="bi bi-lightning-charge" style="font-size: 3rem; color: #4DB280;"></i>
       <h4 class="fw-bold mt-3">Development Version</h4>
       <p class="text-muted small">
-        Install the latest development version directly from GitHub.
+        Get the latest features and updates directly from GitHub.
       </p>
-      <pre class="bg-light p-3 rounded text-start"><code>if (!require("pak", quietly=TRUE)) install.packages("pak")
-pak::pkg_install("massimoaria/tall")</code></pre>
+      <pre class="bg-light p-3 rounded text-start"><code>if (!require("pak", quietly = TRUE)) install.packages("pak")
+pak::pkg_install("massimoaria/tall")
+
+# Run TALL
+library(tall)
+tall()</code></pre>
     </div>
   </div>
-
-  <!-- Run TALL -->
-  <div class="mt-5 text-center aos-item" data-aos="fade-up">
-    <h5 class="fw-bold text-success mb-3">▶️ Run TALL</h5>
-    <pre class="bg-light p-3 rounded d-inline-block text-start"><code>library("tall")
-tall()</code></pre>
-  </div>
 </div>
-
-
 ```
-

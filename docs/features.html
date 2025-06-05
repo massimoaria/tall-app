@@ -98,11 +98,15 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./tall_ai.html"> 
-<span class="menu-text">Tall AI</span></a>
+<span class="menu-text">TALL AI</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./docs.html"> 
+    <a class="nav-link" href="./documentation.html"> 
 <span class="menu-text">Documentation</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./download.html"> 
+<span class="menu-text">Download</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./usecases.html"> 
@@ -132,124 +136,186 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="key-features-of-tall" class="level1">
 <h1>Key Features of TALL</h1>
-<p><strong>TALL (Text Analysis for All)</strong> is a powerful and user-friendly R Shiny application designed to democratize access to advanced text mining tools. Built on the R ecosystem, TALL supports researchers, students, and professionals in performing quantitative and qualitative text analyses — without writing a single line of code.</p>
+<p><strong>TALL (Text Analysis for All)</strong> is a powerful and user-friendly R Shiny application designed to address the needs of users without extensive programming skills, providing a versatile and general-purpose tool for analyzing textual data. Built on the R ecosystem, TALL supports researchers, students, and professionals in performing quantitative and qualitative text analyses — without writing a single line of code.</p>
+<div class="text-center">
+<p><img src="images/features/tall-key.png" alt="TALL Key" style="max-width: 80%; height: auto; margin-top: 1rem;"></p>
+</div>
+<p>To learn how to install TALL and explore its features in detail, visit the <a href="docs.qmd"><strong>Documentation</strong></a> page.</p>
 <hr>
 <section id="tall-ai-your-ai-powered-text-analysis-assistant" class="level2">
-<h2 class="anchored" data-anchor-id="tall-ai-your-ai-powered-text-analysis-assistant">🧠 TALL AI – Your AI-powered Text Analysis Assistant</h2>
-<p>TALL now includes <strong>TALL AI</strong>, an integrated artificial intelligence assistant that enhances users’ analytical experience by providing:</p>
+<h2 class="anchored" data-anchor-id="tall-ai-your-ai-powered-text-analysis-assistant">🤖 TALL AI – Your AI-Powered Text Analysis Assistant</h2>
+<p>TALL now features <strong>TALL AI</strong>, a built-in artificial intelligence assistant designed to support users throughout their analytical journey. It bridges the gap between data and interpretation by offering:</p>
 <ul>
-<li><strong>Automated interpretation</strong> of statistical results</li>
-<li><strong>Critical discussion prompts</strong> on detected patterns</li>
-<li><strong>Conceptual guidance</strong> during topic modeling, clustering, and sentiment analysis</li>
-<li><strong>Contextual suggestions</strong> to support exploration and hypothesis generation</li>
+<li>🧠 <strong>Automated interpretation</strong> of statistical and lexical outputs<br>
+</li>
+<li>💬 <strong>Critical discussion prompts</strong> based on emerging patterns and thematic clusters<br>
+</li>
+<li>🔍 <strong>Conceptual guidance</strong> across multiple analytical modules — including topic modeling, sentiment analysis, clustering, and more</li>
 </ul>
-<p>TALL AI is powered by cutting-edge LLMs and can be activated by connecting a free API key from Google Studio AI.</p>
+<p>Discover the full potential of <a href="./tall_ai.html"><strong>TALL AI</strong></a> 🚀</p>
+<div class="text-center">
+<p><img src="images/tall-ai.png" alt="TALL AI" style="max-width: 40%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
-<section id="complete-and-guided-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="complete-and-guided-workflow">🚀 Complete and Guided Workflow</h2>
-<p>From raw text to interpretative insight, TALL provides a structured workflow:</p>
+<section id="tall-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="tall-workflow">🚀 TALL Workflow</h2>
+<p>TALL offers a seamless and structured workflow that guides users from raw text to interpretable insights — no programming required.</p>
 <ol type="1">
-<li><strong>Import</strong> text data from multiple formats (.txt, .csv, .bib, Wikipedia, Biblioshiny, etc.)</li>
-<li><strong>Pre-process</strong> using integrated NLP tools (tokenization, lemmatization, PoS-tagging, semantic compression)</li>
-<li><strong>Analyze</strong> through diverse modules: word frequencies, co-occurrences, correspondence analysis, clustering, topic modeling, sentiment analysis</li>
-<li><strong>Visualize &amp; export</strong> results for reports or reuse</li>
+<li><strong>Import</strong> text data from a variety of sources and formats: <code>.txt</code>, <code>.csv</code>, <code>.xlsx</code>, <code>.pdf</code>, Wikipedia pages, or Biblioshiny export files.<br>
+</li>
+<li><strong>Pre-process</strong> texts using integrated NLP techniques — including tokenization, lemmatization, PoS-tagging, and semantic filtering.<br>
+</li>
+<li><strong>Analyze</strong> your corpus with multiple modules: word frequencies, co-occurrence networks, correspondence analysis, clustering, topic modeling, summarization, and more.<br>
+</li>
+<li><strong>Visualize &amp; Export</strong> results as high-quality plots, structured tables, or <code>.tall</code> files for further use and reproducibility.</li>
 </ol>
+<div class="text-center">
+<p><img src="images/features/tall-workflow.png" alt="TALL workflow" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 <section id="text-import-metadata-integration" class="level2">
 <h2 class="anchored" data-anchor-id="text-import-metadata-integration">🗂️ Text Import &amp; Metadata Integration</h2>
 <ul>
-<li>Load raw texts or pre-tagged datasets</li>
-<li>Import <code>.tall</code> structured files for session recovery</li>
-<li>Direct export from <strong>Biblioshiny</strong></li>
-<li>Add metadata or split/group documents dynamically</li>
+<li><p>Load raw text files in various formats</p></li>
+<li><p>Import <code>.tall</code> structured files to resume previous sessions</p></li>
+<li><p>Import data directly from Biblioshiny – the Shiny web interface of <a href="www.bibliometrix.org">bibliometrix</a>, the R package for science mapping</p></li>
+<li><p>Dynamically add metadata, split documents, or group them based on external information</p></li>
 </ul>
+<div class="text-right">
+<p><img src="images/features/tall-importEdit.png" alt="TALL import and Edit" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 <section id="advanced-preprocessing-pipeline" class="level2">
 <h2 class="anchored" data-anchor-id="advanced-preprocessing-pipeline">🧹 Advanced Preprocessing Pipeline</h2>
-<p>The preprocessing engine integrates:</p>
+<p>TALL includes a robust and modular preprocessing engine that prepares text data for advanced analysis through:</p>
 <ul>
-<li><strong>Universal Dependencies</strong> based models (v2.15) for accurate PoS-tagging and lemmatization</li>
-<li><strong>Support for 57 languages</strong>, including specific variants for domains such as <strong>social media</strong>, <strong>news</strong>, and <strong>scientific writing</strong>, covering a total of <strong>87 pre-trained models</strong></li>
-<li>Semantic tagging of special entities and automatic <strong>multi-word expression</strong> creation</li>
-<li>Customizable token/lemma filtering and grouping</li>
+<li><strong>PoS-tagging and lemmatization</strong> powered by pre-trained models based on the Universal Dependencies framework<br>
+</li>
+<li><strong>Multilingual support</strong>, including a wide range of languages and domain-specific variants tailored for social media, news, and scientific texts<br>
+</li>
+<li><strong>Semantic tagging</strong> of special entities and automated <strong>multi-word expression</strong> detection<br>
+</li>
+<li>Flexible filtering and grouping of tokens or lemmas, based on user-defined criteria or external metadata</li>
 </ul>
-<p>All preprocessing steps are modular, transparent, and reproducible, ensuring high-quality input for downstream analyses.</p>
+<p>All preprocessing operations are transparent, reproducible, and designed to ensure consistent input quality for downstream analyses.</p>
+<div class="text-center">
+<p><img src="images/features/tall-language.png" alt="TALL Languages models" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 <section id="descriptive-statistics-lexical-insights" class="level2">
 <h2 class="anchored" data-anchor-id="descriptive-statistics-lexical-insights">📊 Descriptive Statistics &amp; Lexical Insights</h2>
+<p>A set of tools for exploring the lexical structure of your corpus, including:</p>
 <ul>
-<li>Vocabulary and TF-IDF distributions</li>
-<li>Word clouds</li>
-<li>Word in Context (KWIC) and semantic ego-networks</li>
+<li>Vocabulary distributions and <strong>TF-IDF</strong> weighting<br>
+</li>
+<li><strong>Word clouds</strong> for visualizing term prominence<br>
+</li>
+<li><strong>Word in Context</strong> analysis and <strong>semantic ego-networks</strong> to examine word usage patterns</li>
 </ul>
-<p>Users can explore specific terms in context, across documents and sentences.</p>
+<p>These tools allow users to investigate specific terms within their full textual context — across documents, sentences, or defined groups — supporting both qualitative interpretation and quantitative analysis.</p>
+<div class="text-center">
+<p><img src="images/features/tall-overview.png" alt="TALL overview" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<div class="text-center">
+<p><img src="images/features/tall-wic.png" alt="TALL words context" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 <section id="topic-detection" class="level2">
 <h2 class="anchored" data-anchor-id="topic-detection">📈 Topic Detection</h2>
-<p>Multiple methods are available:</p>
+<p>Methods to uncover latent themes and conceptual structures within a corpus, supporting both statistical and linguistic approaches:</p>
 <ul>
-<li><strong>Lexical Correspondence Analysis (LCA)</strong></li>
-<li><strong>Hierarchical clustering (Tandem Analysis)</strong></li>
-<li><strong>Latent Dirichlet Allocation (LDA)</strong></li>
-<li><strong>Reinert Clustering</strong></li>
+<li><strong>Correspondence Analysis (CA)</strong> to identify and visualize associations between terms and documents<br>
+</li>
+<li><strong>Topic Modelign with Latent Dirichlet Allocation (LDA)</strong> for probabilistic topic modeling and distribution-based interpretation<br>
+</li>
+<li><strong>Reinert Clustering</strong> to segment texts into lexically homogeneous clusters based on word co-occurrence<br>
+</li>
+<li><strong>Word Embedding</strong> to explore semantic similarity through vector space representations of terms</li>
 </ul>
-<p>All methods include parameter tuning, model selection (e.g.&nbsp;CaoJuan index), and graphical outputs.</p>
+<p>Each method includes options for parameter tuning, model selection (e.g., CaoJuan index for LDA), and rich graphical outputs to support interpretation and comparison.</p>
+<div class="text-center">
+<p><img src="images/features/tall-topic.png" alt="TALL words context" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 <section id="network-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="network-analysis">🌐 Network Analysis</h2>
+<p>Construct and explore networks that reveal the relational structure of language within a corpus:</p>
 <ul>
-<li>Build <strong>co-occurrence networks</strong> from term/document matrices</li>
-<li>Perform <strong>community detection</strong> using clustering algorithms</li>
-<li>Analyze network metrics (centrality, density, modularity)</li>
-<li>Explore networks of words, multi-words, emojis, or entities</li>
+<li>Build <strong>co-occurrence networks</strong> based on term–document or term–sentence matrices<br>
+</li>
+<li>Perform <strong>community detection</strong> through clustering algorithms to uncover semantic groupings<br>
+</li>
+<li>Compute and visualize key <strong>network metrics</strong>, such as centrality, density, and modularity<br>
+</li>
+<li>Analyze networks of <strong>words</strong>, <strong>multi-word expressions</strong>, <strong>emojis</strong>, and <strong>named entities</strong></li>
 </ul>
+<p>These tools help uncover underlying conceptual structures and patterns of term association, supporting both exploratory insight and hypothesis generation.</p>
+<div class="text-center">
+<p><img src="images/features/tall-net.png" alt="TALL network" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 <section id="sentiment-polarity-detection" class="level2">
 <h2 class="anchored" data-anchor-id="sentiment-polarity-detection">😃 Sentiment &amp; Polarity Detection</h2>
-<p>Includes multiple lexicons:</p>
+<p>TALL offers built-in tools for sentiment and polarity analysis, leveraging multiple well-established lexical resources:</p>
 <ul>
-<li>Hu &amp; Liu (general sentiment)</li>
-<li>Loughran-McDonald (financial)</li>
-<li>NRC Emotion Lexicon (emotional tones)</li>
+<li><strong>Hu &amp; Liu Opinion Lexicon</strong> – for general-purpose sentiment classification<br>
+</li>
+<li><strong>Loughran-McDonald Dictionary</strong> – tailored to financial and economic texts<br>
+</li>
+<li><strong>NRC Emotion Lexicon</strong> – capturing a wide range of emotional tones (e.g., joy, anger, trust)</li>
 </ul>
-<p>TALL computes polarity scores with context-aware rules (negators, amplifiers, de-amplifiers) and logistic scaling.</p>
+<p>Polarity is computed using context-sensitive rules that account for <strong>negators</strong>, <strong>amplifiers</strong>, and <strong>de-amplifiers</strong>, and results are normalized through a logistic scaling function. This enables a nuanced analysis of both sentiment orientation and emotional intensity at the document or sentence level.</p>
+<div class="text-center">
+<p><img src="images/features/tall-pol.png" alt="TALL network" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 <section id="summarization" class="level2">
 <h2 class="anchored" data-anchor-id="summarization">📚 Summarization</h2>
-<p>TALL uses <strong>TextRank</strong>, a graph-based extractive summarization algorithm that:</p>
+<p>TALL includes an automatic summarization module based on <strong>TextRank</strong>, a graph-based extractive algorithm that identifies and ranks the most relevant sentences within a document. The method:</p>
 <ul>
-<li>Ranks sentences by centrality in a similarity network</li>
-<li>Produces adjustable summaries (concise or detailed)</li>
-<li>Visualizes sentence relevance and structure</li>
+<li>Constructs a similarity graph between sentences and ranks them by <strong>centrality</strong><br>
+</li>
+<li>Produces summaries of variable length, from concise overviews to more detailed extracts<br>
+</li>
+<li>Visualizes sentence relevance to enhance interpretability and support manual refinement</li>
 </ul>
+<p>This functionality helps users quickly distill key information from long documents, improving readability and supporting exploratory analysis.</p>
+<div class="text-center">
+<p><img src="images/features/tall-summ.png" alt="TALL network" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 <section id="reporting-and-export" class="level2">
 <h2 class="anchored" data-anchor-id="reporting-and-export">🧾 Reporting and Export</h2>
+<p>TALL provides flexible options for saving, exporting, and reporting results at every stage of the analysis:</p>
 <ul>
-<li>Save intermediate or final results in <code>.tall</code> files</li>
-<li>Export graphs and tables in Excel or image formats</li>
-<li>Automatically add results to a cumulative report</li>
+<li>Save intermediate or final outputs as <code>.tall</code> files to resume or replicate sessions later<br>
+</li>
+<li>Export charts and tables in common formats such as <strong>Excel</strong>, <strong>CSV</strong>, and <strong>PNG</strong><br>
+</li>
+<li>Automatically include selected results in a cumulative, editable <strong>report</strong></li>
 </ul>
+<p>These features ensure transparency, reproducibility, and ease of sharing across research teams or teaching contexts.</p>
 <hr>
 </section>
 <section id="open-source-extensible" class="level2">
 <h2 class="anchored" data-anchor-id="open-source-extensible">🔓 Open Source &amp; Extensible</h2>
-<p>TALL is fully open source and available on <a href="https://github.com/massimoaria/tall">GitHub</a>. Users are encouraged to contribute, report issues, or extend its capabilities.</p>
+<p><strong>TALL</strong> is fully open source and actively maintained. Its source code is available on <a href="https://github.com/massimoaria/tall">GitHub</a>, where users are welcome to contribute, report issues, suggest features, or adapt the platform to their specific needs.</p>
 <hr>
 </section>
 <section id="designed-for-everyone" class="level2">
 <h2 class="anchored" data-anchor-id="designed-for-everyone">🎯 Designed for Everyone</h2>
-<p>Whether you are a linguist, data scientist, social scientist, or just exploring text analytics, <strong>TALL</strong> offers a robust, intuitive environment to uncover meaning in texts — now with <strong>AI-powered guidance</strong>.</p>
-<p>Ready to explore your texts? <a href="./index.html">Get started now!</a></p>
+<p>Whether you’re a linguist, data scientist, social researcher, educator, or simply curious about text analytics, <strong>TALL</strong> provides a robust and accessible environment to explore and interpret textual data — now enhanced with <strong>AI-powered guidance</strong>.</p>
+<p>Ready to start your journey into text analysis?<br>
+👉 <a href="docs.qmd">Get started now!</a></p>
 
 
 </section>

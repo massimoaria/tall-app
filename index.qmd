@@ -4,7 +4,6 @@ format: html
 page-layout: full
 ---
 
-
 ```{=html}
 
 <div class="container my-5" id="features">
@@ -17,25 +16,25 @@ page-layout: full
     </div>
   </div>
 
-<div class="text-center my-4 px-3 aos-item" data-aos="fade-up">
-  <p class="lead">
-    <strong>TALL</strong> is a Shiny app for text analysis, designed for researchers without programming skills.
-    It offers a wide range of tools to explore and extract insights from textual data easily and effectively.
-  </p>
+  <div class="text-center my-4 px-3 aos-item" data-aos="fade-up">
+    <p class="lead">
+      <strong>TALL</strong> is a Shiny app for text analysis, designed for researchers without programming skills.
+      It offers a wide range of tools to explore and extract insights from textual data easily and effectively.
+    </p>
+  </div>
+
+  <div class="discover-button aos-item" data-aos="fade-up" data-aos-delay="200">
+    <a href="features.html">EXPLORE</a>
+  </div>
+
+  <!-- AOS Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </div>
-
-<div class="discover-button aos-item" data-aos="fade-up" data-aos-delay="200">
-  <a href="#features">Discover</a>
-</div>
-
-<!-- AOS Animate On Scroll -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
-
 ```

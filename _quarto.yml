@@ -12,9 +12,11 @@ website:
       - href: features.qmd
         text: Features
       - href: tall_ai.qmd
-        text: Tall AI
-      - href: docs.qmd
+        text: TALL AI
+      - href: documentation.qmd
         text: Documentation
+      - href: download.qmd
+        text: Download
       - href: usecases.qmd
         text: Use Cases       
       - href: about_us.qmd

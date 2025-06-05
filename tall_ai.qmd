@@ -6,70 +6,77 @@ format:
 page-layout: full
 ---
 
-# ✨ TALL AI – Interpreting Text, Intelligently
+::: {.text-center}
+<img src="images/tall-ai.png" alt="TALL AI" style="max-width: 30%; height: auto; margin-top: 1rem;" />
+:::
 
-**TALL AI** is the new artificial intelligence assistant embedded in the TALL ecosystem. It empowers users with automated interpretation and critical support across the entire text analysis pipeline — transforming data exploration into a guided reasoning process.
+**TALL AI** is the intelligent core of the TALL platform — a virtual assistant powered by state-of-the-art **large language models (LLMs)**, seamlessly integrated to enhance every stage of your text analysis workflow.
 
-------------------------------------------------------------------------
+More than just an add-on, TALL AI serves as an interpretative layer between analytical results and human understanding. It helps users — especially those without programming or statistical expertise — to make sense of complex outputs and uncover actionable insights from their data.
 
-## 🌍 Designed for All Disciplines
+---
 
-Whether you’re analyzing political narratives, consumer reviews, scientific abstracts, or historical sources — TALL AI adapts to your needs and helps you **make sense of words at scale**.
+## 🔍 What Can TALL AI Do?
 
-> <h4>*Discover what your texts are saying.*</h4>
-> <h4>*Let **TALL AI** help you hear them.*</h4>
+TALL AI supports users by delivering:
 
-## 🧠 What is TALL AI?
+- 🧠 **Automated interpretation** of statistical indicators, lexical patterns, and clustering structures  
+- 💬 **Critical discussion prompts**, suggesting meaningful hypotheses and encouraging reflection on emerging patterns  
+- 🔍 **Conceptual guidance** in modules such as topic modeling, sentiment and polarity analysis, lexical correspondence analysis, and network clustering  
+- 🧾 **Natural language summaries** of results and dashboards, written in clear and domain-relevant terms
 
-TALL AI is a large language model–based assistant designed to work in tandem with TALL’s analytical modules. Its main goal is to help users **understand**, **discuss**, and **critically reflect** on the outputs of their textual analyses — without requiring programming or domain-specific expertise.
+Whether you're working with news articles, tweets, abstracts, or long-form reports, TALL AI helps **translate results into knowledge** — without requiring technical configuration.
 
-------------------------------------------------------------------------
-
-## 🎯 Key Capabilities
-
-TALL AI provides support across several stages of analysis:
-
-### 📊 Descriptive and Lexical Analysis
-
--   Highlights **vocabulary distribution anomalies**
--   Suggests **interpretations of lexical diversity and concentration**
--   Flags **dominant linguistic patterns** (e.g., jargon, recurring constructs)
-
-### 📌 Topic Modeling & Clustering
-
--   Labels **emergent clusters and topics** with clear summaries
--   Connects results to broader **conceptual themes**
--   Detects **semantic overlaps or drifts** across time, domains, or authorship
-
-### 🌐 Network Analysis
-
--   Describes **network structure** (density, modularity, centrality)
--   Interprets **semantic communities**
--   Identifies **key connectors and thematic bridges**
-
-### 😊 Sentiment & Polarity Detection
-
--   Explains sentiment trends
--   Discusses the **meaning of polarized terms in context**
--   Highlights **valence shifts** and emotional dynamics
-
-### 🧾 Summarization
-
--   Suggests **critical readings** of summaries
--   Flags **missing narrative elements**
--   Helps **rephrase or refine** automated outputs
-
-------------------------------------------------------------------------
+---
 
 ## 🛠️ How It Works
 
-TALL AI is powered by **Google Gemini APIs**, integrated into TALL via a lightweight authentication layer. Users must:
+TALL AI connects directly to **Google Gemini**, allowing users to access advanced language models with minimal setup.
 
-1.  Register at [Google Studio AI](https://makersuite.google.com/)
-2.  Generate a **free API key** for Gemini models
-3.  Enter the key in TALL's settings panel
+To activate TALL AI:
 
-No advanced configuration is needed — just plug and play.
+1. Visit <a href="https://makersuite.google.com/" target="_blank" rel="noopener">Google Studio AI</a>
+2. Generate a **free API key**
+3. Paste the key into the **TALL settings panel**
+
+::: {.text-center}
+<img src="images/ai/tall-settings.png" alt="TALL settings" style="max-width: 60%; height: auto; margin-top: 1rem;" />
+:::
+
+Once enabled, TALL AI becomes available across analysis modules and automatically contextualizes your results as you explore.
+
+
+## Why Use TALL AI? - Interpreting Text, Intelligently 🚀
+
+TALL AI empowers users to:
+
+- Go beyond charts and tables with **narrative interpretations**  
+- Avoid misinterpretation by receiving **guided suggestions**  
+- Save time by **summarizing complex outputs** automatically  
+- Improve communication of results in reports, presentations, and discussions  
+
+::: {.text-center}
+<img src="images/ai/tall-aiwic.png" alt="TALL ai" style="max-width: 90%; height: auto; margin-top: 1rem;" />
+:::
+
+Whether you are exploring thematic structures, investigating sentiment dynamics, or comparing clusters, TALL AI becomes your analytical companion — turning data into direction.
+
+---
+
+## 🎯 Key Capabilities
+
+**TALL AI** enhances the interpretability of textual data by offering intelligent, context-aware support across all stages of analysis.
+
+In the early phases, it assists with **descriptive and lexical exploration**, highlighting anomalies in vocabulary distribution, interpreting levels of lexical diversity and concentration, and identifying dominant linguistic patterns — such as domain-specific jargon or repetitive structures.
+
+When working with **topic modeling and clustering**, TALL AI automatically suggests clear, meaningful labels for emergent topics and clusters. It links these structures to broader conceptual themes, while also detecting semantic overlaps or drifts that may occur across time, text genres, or author groups.
+
+In **network analysis**, TALL AI interprets structural metrics such as density, modularity, and centrality. It helps users understand the organization of semantic communities and pinpoints key connectors or bridging terms between different conceptual areas.
+
+In the context of **sentiment and polarity detection**, TALL AI provides narrative explanations of sentiment trends, clarifies the role of polarized terms within specific contexts, and draws attention to valence shifters or emotional dynamics present in the text.
+
+In each of these areas, TALL AI transforms numerical output into actionable interpretation — enabling more confident, insightful, and communicable results.
+
 
 ------------------------------------------------------------------------
 
@@ -84,14 +91,15 @@ No advanced configuration is needed — just plug and play.
 
 ## 🔍 Why Use TALL AI?
 
-| Without TALL AI          | With TALL AI                               |
-|--------------------------|--------------------------------------------|
-| Raw tables and graphs    | Interpreted patterns and themes            |
-| Technical statistics     | Explained indicators and contextualization |
-| Trial-and-error labeling | Suggested cluster/topic labels             |
-| Manual sensemaking       | Guided exploratory reasoning               |
+| ❌ **Without TALL AI**             | ✅ **With TALL AI**                               |
+|----------------------------------|--------------------------------------------------|
+| 📉 Raw tables and graphs          | 🧠 Interpreted patterns and conceptual summaries  |
+| 📊 Technical statistics           | 🧾 Explained indicators in plain language         |
+| 🧩 Trial-and-error topic labeling | 🏷️ Suggested and consistent cluster/topic labels  |
+| 🕵️‍♂️ Manual result interpretation | 💬 Guided reasoning and contextual insights       |
 
-TALL AI transforms **results into insight**.
+
+
 
 ------------------------------------------------------------------------
 
@@ -99,8 +107,10 @@ TALL AI transforms **results into insight**.
 
 -   No textual content is stored or reused by TALL AI
 -   API usage is always local and user-controlled
--   Interpretations are **suggestions**, not deterministic outputs
+-   Interpretations are **suggestions**, not deterministic outputs!!!
 
 All interactions are **documented, optional, and reproducible**.
 
-[Back to Features →](features.qmd)
+## TALL AI transforms results into insight ✨
+🔓Ready to unlock the power of AI-driven text interpretation?  
+👉 [**Start using TALL AI now**](docs.qmd)

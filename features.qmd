@@ -6,129 +6,191 @@ format:
 page-layout: full
 ---
 
-
 # Key Features of TALL
 
-**TALL (Text Analysis for All)** is a powerful and user-friendly R Shiny application designed to democratize access to advanced text mining tools. Built on the R ecosystem, TALL supports researchers, students, and professionals in performing quantitative and qualitative text analyses — without writing a single line of code.
+**TALL (Text Analysis for All)** is a powerful and user-friendly R Shiny application designed to address the needs of users without extensive programming skills, providing a versatile and general-purpose tool for analyzing textual data. Built on the R ecosystem, TALL supports researchers, students, and professionals in performing quantitative and qualitative text analyses — without writing a single line of code.
 
----
+::: {.text-center}
+<img src="images/features/tall-key.png" alt="TALL Key" style="max-width: 80%; height: auto; margin-top: 1rem;" />
+:::
 
-## 🧠 TALL AI – Your AI-powered Text Analysis Assistant
+To learn how to install TALL and explore its features in detail, visit the [**Documentation**](docs.qmd) page.
 
-TALL now includes **TALL AI**, an integrated artificial intelligence assistant that enhances users' analytical experience by providing:
+------------------------------------------------------------------------
 
-- **Automated interpretation** of statistical results
-- **Critical discussion prompts** on detected patterns
-- **Conceptual guidance** during topic modeling, clustering, and sentiment analysis
-- **Contextual suggestions** to support exploration and hypothesis generation
+## 🤖 TALL AI – Your AI-Powered Text Analysis Assistant
 
-TALL AI is powered by cutting-edge LLMs and can be activated by connecting a free API key from Google Studio AI.
+TALL now features **TALL AI**, a built-in artificial intelligence assistant designed to support users throughout their analytical journey. It bridges the gap between data and interpretation by offering:
 
----
+-   🧠 **Automated interpretation** of statistical and lexical outputs\
+-   💬 **Critical discussion prompts** based on emerging patterns and thematic clusters\
+-   🔍 **Conceptual guidance** across multiple analytical modules — including topic modeling, sentiment analysis, clustering, and more
 
-## 🚀 Complete and Guided Workflow
+Discover the full potential of [**TALL AI**](tall_ai.qmd) 🚀
 
-From raw text to interpretative insight, TALL provides a structured workflow:
+::: {.text-center}
+<img src="images/tall-ai.png" alt="TALL AI" style="max-width: 40%; height: auto; margin-top: 1rem;" />
+:::
 
-1. **Import** text data from multiple formats (.txt, .csv, .bib, Wikipedia, Biblioshiny, etc.)
-2. **Pre-process** using integrated NLP tools (tokenization, lemmatization, PoS-tagging, semantic compression)
-3. **Analyze** through diverse modules: word frequencies, co-occurrences, correspondence analysis, clustering, topic modeling, sentiment analysis
-4. **Visualize & export** results for reports or reuse
+------------------------------------------------------------------------
 
----
+## 🚀 TALL Workflow
+
+TALL offers a seamless and structured workflow that guides users from raw text to interpretable insights — no programming required.
+
+1. **Import** text data from a variety of sources and formats: `.txt`, `.csv`, `.xlsx`, `.pdf`, Wikipedia pages, or Biblioshiny export files.  
+2. **Pre-process** texts using integrated NLP techniques — including tokenization, lemmatization, PoS-tagging, and semantic filtering.  
+3. **Analyze** your corpus with multiple modules: word frequencies, co-occurrence networks, correspondence analysis, clustering, topic modeling, summarization, and more.  
+4. **Visualize & Export** results as high-quality plots, structured tables, or `.tall` files for further use and reproducibility.
+
+
+::: {.text-center}
+<img src="images/features/tall-workflow.png" alt="TALL workflow" style="max-width: 90%; height: auto; margin-top: 1rem;" />
+:::
+
+------------------------------------------------------------------------
 
 ## 🗂️ Text Import & Metadata Integration
 
-- Load raw texts or pre-tagged datasets
-- Import `.tall` structured files for session recovery
-- Direct export from **Biblioshiny**
-- Add metadata or split/group documents dynamically
+- Load raw text files in various formats
 
----
+- Import `.tall` structured files to resume previous sessions
+
+- Import data directly from Biblioshiny – the Shiny web interface of [bibliometrix](www.bibliometrix.org), the R package for science mapping
+
+- Dynamically add metadata, split documents, or group them based on external information
+
+::: {.text-right}
+<img src="images/features/tall-importEdit.png" alt="TALL import and Edit" style="max-width: 90%; height: auto; margin-top: 1rem;" />
+:::
+------------------------------------------------------------------------
 
 ## 🧹 Advanced Preprocessing Pipeline
 
-The preprocessing engine integrates:
+TALL includes a robust and modular preprocessing engine that prepares text data for advanced analysis through:
 
-- **Universal Dependencies** based models (v2.15) for accurate PoS-tagging and lemmatization
-- **Support for 57 languages**, including specific variants for domains such as **social media**, **news**, and **scientific writing**, covering a total of **87 pre-trained models**
-- Semantic tagging of special entities and automatic **multi-word expression** creation
-- Customizable token/lemma filtering and grouping
+-   **PoS-tagging and lemmatization** powered by pre-trained models based on the Universal Dependencies framework  
+-   **Multilingual support**, including a wide range of languages and domain-specific variants tailored for social media, news, and scientific texts  
+-   **Semantic tagging** of special entities and automated **multi-word expression** detection  
+-   Flexible filtering and grouping of tokens or lemmas, based on user-defined criteria or external metadata
 
-All preprocessing steps are modular, transparent, and reproducible, ensuring high-quality input for downstream analyses.
+All preprocessing operations are transparent, reproducible, and designed to ensure consistent input quality for downstream analyses.
 
----
+::: {.text-center}
+<img src="images/features/tall-language.png" alt="TALL Languages models" style="max-width: 90%; height: auto; margin-top: 1rem;" />
+:::
+
+------------------------------------------------------------------------
 
 ## 📊 Descriptive Statistics & Lexical Insights
 
-- Vocabulary and TF-IDF distributions
-- Word clouds
-- Word in Context (KWIC) and semantic ego-networks
+A set of tools for exploring the lexical structure of your corpus, including:
 
-Users can explore specific terms in context, across documents and sentences.
+-   Vocabulary distributions and **TF-IDF** weighting  
+-   **Word clouds** for visualizing term prominence  
+-   **Word in Context** analysis and **semantic ego-networks** to examine word usage patterns
 
----
+These tools allow users to investigate specific terms within their full textual context — across documents, sentences, or defined groups — supporting both qualitative interpretation and quantitative analysis.
+
+::: {.text-center}
+<img src="images/features/tall-overview.png" alt="TALL overview" style="max-width: 90%; height: auto; margin-top: 1rem;" />
+:::
+
+::: {.text-center}
+<img src="images/features/tall-wic.png" alt="TALL words context" style="max-width: 90%; height: auto; margin-top: 1rem;" />
+:::
+
+------------------------------------------------------------------------
 
 ## 📈 Topic Detection
 
-Multiple methods are available:
+Methods to uncover latent themes and conceptual structures within a corpus, supporting both statistical and linguistic approaches:
 
-- **Lexical Correspondence Analysis (LCA)**
-- **Hierarchical clustering (Tandem Analysis)**
-- **Latent Dirichlet Allocation (LDA)**
-- **Reinert Clustering**
+-   **Correspondence Analysis (CA)** to identify and visualize associations between terms and documents  
+-   **Topic Modelign with Latent Dirichlet Allocation (LDA)** for probabilistic topic modeling and distribution-based interpretation  
+-   **Reinert Clustering** to segment texts into lexically homogeneous clusters based on word co-occurrence  
+-   **Word Embedding** to explore semantic similarity through vector space representations of terms
 
-All methods include parameter tuning, model selection (e.g. CaoJuan index), and graphical outputs.
+Each method includes options for parameter tuning, model selection (e.g., CaoJuan index for LDA), and rich graphical outputs to support interpretation and comparison.
 
----
+::: {.text-center}
+<img src="images/features/tall-topic.png" alt="TALL words context" style="max-width: 90%; height: auto; margin-top: 1rem;" />
+:::
+
+------------------------------------------------------------------------
 
 ## 🌐 Network Analysis
 
-- Build **co-occurrence networks** from term/document matrices
-- Perform **community detection** using clustering algorithms
-- Analyze network metrics (centrality, density, modularity)
-- Explore networks of words, multi-words, emojis, or entities
+Construct and explore networks that reveal the relational structure of language within a corpus:
 
----
+-   Build **co-occurrence networks** based on term–document or term–sentence matrices  
+-   Perform **community detection** through clustering algorithms to uncover semantic groupings  
+-   Compute and visualize key **network metrics**, such as centrality, density, and modularity  
+-   Analyze networks of **words**, **multi-word expressions**, **emojis**, and **named entities**
+
+These tools help uncover underlying conceptual structures and patterns of term association, supporting both exploratory insight and hypothesis generation.
+
+::: {.text-center}
+<img src="images/features/tall-net.png" alt="TALL network" style="max-width: 90%; height: auto; margin-top: 1rem;" />
+:::
+
+------------------------------------------------------------------------
 
 ## 😃 Sentiment & Polarity Detection
 
-Includes multiple lexicons:
+TALL offers built-in tools for sentiment and polarity analysis, leveraging multiple well-established lexical resources:
 
-- Hu & Liu (general sentiment)
-- Loughran-McDonald (financial)
-- NRC Emotion Lexicon (emotional tones)
+-   **Hu & Liu Opinion Lexicon** – for general-purpose sentiment classification  
+-   **Loughran-McDonald Dictionary** – tailored to financial and economic texts  
+-   **NRC Emotion Lexicon** – capturing a wide range of emotional tones (e.g., joy, anger, trust)
 
-TALL computes polarity scores with context-aware rules (negators, amplifiers, de-amplifiers) and logistic scaling.
+Polarity is computed using context-sensitive rules that account for **negators**, **amplifiers**, and **de-amplifiers**, and results are normalized through a logistic scaling function. This enables a nuanced analysis of both sentiment orientation and emotional intensity at the document or sentence level.
 
----
+::: {.text-center}
+<img src="images/features/tall-pol.png" alt="TALL network" style="max-width: 90%; height: auto; margin-top: 1rem;" />
+:::
+
+------------------------------------------------------------------------
 
 ## 📚 Summarization
 
-TALL uses **TextRank**, a graph-based extractive summarization algorithm that:
+TALL includes an automatic summarization module based on **TextRank**, a graph-based extractive algorithm that identifies and ranks the most relevant sentences within a document. The method:
 
-- Ranks sentences by centrality in a similarity network
-- Produces adjustable summaries (concise or detailed)
-- Visualizes sentence relevance and structure
+-   Constructs a similarity graph between sentences and ranks them by **centrality**  
+-   Produces summaries of variable length, from concise overviews to more detailed extracts  
+-   Visualizes sentence relevance to enhance interpretability and support manual refinement
 
----
+This functionality helps users quickly distill key information from long documents, improving readability and supporting exploratory analysis.
+
+::: {.text-center}
+<img src="images/features/tall-summ.png" alt="TALL network" style="max-width: 90%; height: auto; margin-top: 1rem;" />
+:::
+
+------------------------------------------------------------------------
 
 ## 🧾 Reporting and Export
 
-- Save intermediate or final results in `.tall` files
-- Export graphs and tables in Excel or image formats
-- Automatically add results to a cumulative report
+TALL provides flexible options for saving, exporting, and reporting results at every stage of the analysis:
 
----
+-   Save intermediate or final outputs as `.tall` files to resume or replicate sessions later  
+-   Export charts and tables in common formats such as **Excel**, **CSV**, and **PNG**  
+-   Automatically include selected results in a cumulative, editable **report**
+
+These features ensure transparency, reproducibility, and ease of sharing across research teams or teaching contexts.
+
+
+------------------------------------------------------------------------
 
 ## 🔓 Open Source & Extensible
 
-TALL is fully open source and available on [GitHub](https://github.com/massimoaria/tall). Users are encouraged to contribute, report issues, or extend its capabilities.
+**TALL** is fully open source and actively maintained. Its source code is available on [GitHub](https://github.com/massimoaria/tall), where users are welcome to contribute, report issues, suggest features, or adapt the platform to their specific needs.
 
----
+------------------------------------------------------------------------
 
 ## 🎯 Designed for Everyone
 
-Whether you are a linguist, data scientist, social scientist, or just exploring text analytics, **TALL** offers a robust, intuitive environment to uncover meaning in texts — now with **AI-powered guidance**.
+Whether you're a linguist, data scientist, social researcher, educator, or simply curious about text analytics, **TALL** provides a robust and accessible environment to explore and interpret textual data — now enhanced with **AI-powered guidance**.
 
-Ready to explore your texts? [Get started now!](index.qmd)
+Ready to start your journey into text analysis?  
+👉 [Get started now!](docs.qmd)
+
