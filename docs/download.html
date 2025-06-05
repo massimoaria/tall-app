@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Download</title>
+<title>download</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -98,11 +98,15 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./tall_ai.html"> 
-<span class="menu-text">Tall AI</span></a>
+<span class="menu-text">TALL AI</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./docs.html"> 
+    <a class="nav-link" href="./documentation.html"> 
 <span class="menu-text">Documentation</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./download.html" aria-current="page"> 
+<span class="menu-text">Download</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./usecases.html"> 
@@ -123,75 +127,68 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Download</h1>
-</div>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta column-page">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-
+<section id="installation" class="level2">
+<h2 class="anchored" data-anchor-id="installation">🛠️ Installation</h2>
+<p><strong>TALL</strong> is an R package with an integrated Shiny interface. You can install it in just a few lines of code — either using the stable release from CRAN or the development version from GitHub.</p>
+<section id="system-requirements-setup" class="level3">
+<h3 class="anchored" data-anchor-id="system-requirements-setup">✅ System Requirements &amp; Setup</h3>
+<p>Before installing TALL, make sure the following components are correctly set up on your computer:</p>
+<ol type="1">
+<li><p><strong>Install R</strong><br>
+TALL is built on the R programming language. You must have <strong>R version 4.2.0 or higher</strong> installed.<br>
+👉 Download it from the official <a href="https://cran.r-project.org/" target="_blank" rel="noopener">CRAN R Project</a></p></li>
+<li><p><strong>(Recommended) Install RStudio</strong><br>
+RStudio is a user-friendly interface for working with R. It is highly recommended for running TALL smoothly.<br>
+👉 Download it from <a href="https://posit.co/download/rstudio/" target="_blank" rel="noopener">Posit RStudio Download</a></p></li>
+<li><p><strong>Ensure an Internet Connection</strong><br>
+An active internet connection is required to install TALL and download its dependencies.</p></li>
+<li><p><strong>Install TALL</strong><br>
+You can install TALL using either the stable version from CRAN or the latest development version from GitHub:</p></li>
+</ol>
 <div class="container my-5">
-  <h2 class="text-center fw-bold mb-4 text-success anchored">📥 Install Instructions</h2>
-
-  <p class="text-center mb-5 text-muted">
-    TALL can be installed in two ways, depending on whether you want the stable version or the latest development version.<br>
-    Make sure to have the latest version of <a href="https://cran.r-project.org/" target="_blank"><strong>R</strong></a> installed.
-  </p>
-
-  <div class="row justify-content-center align-items-start g-5">
+  <div class="row">
     <!-- Stable version -->
-    <div class="col-md-5 text-center">
-      <i class="bi bi-download" style="font-size: 3rem; color: #4DB280;"></i>
+    <div class="col-md-6 mb-4 text-center">
+      <i class="bi bi-check-circle" style="font-size: 3rem; color: #4DB280;"></i>
       <h4 class="fw-bold mt-3 anchored">Stable Version</h4>
       <p class="text-muted small">
-        Official release from <a href="https://cran.r-project.org/" target="_blank">CRAN</a>, updated monthly.
+        Official release available on <a href="https://cran.r-project.org/package=tall" target="_blank" rel="noopener">CRAN</a>, updated monthly.
       </p>
-      <pre class="bg-light p-3 rounded text-start"><code>if (!require("pak", quietly=TRUE)) install.packages("pak")
-pak::pkg_install("tall")</code></pre>
+      <pre class="bg-light p-3 rounded text-start"><code>if (!require("pak", quietly = TRUE)) install.packages("pak")
+pak::pkg_install("tall")
+
+# Run TALL
+library(tall)
+tall()</code></pre>
     </div>
 
     <!-- Development version -->
-    <div class="col-md-5 text-center">
-      <i class="bi bi-download" style="font-size: 3rem; color: #4DB280;"></i>
+    <div class="col-md-6 mb-4 text-center">
+      <i class="bi bi-lightning-charge" style="font-size: 3rem; color: #4DB280;"></i>
       <h4 class="fw-bold mt-3 anchored">Development Version</h4>
       <p class="text-muted small">
-        Install the latest development version directly from GitHub.
+        Get the latest features and updates directly from GitHub.
       </p>
-      <pre class="bg-light p-3 rounded text-start"><code>if (!require("pak", quietly=TRUE)) install.packages("pak")
-pak::pkg_install("massimoaria/tall")</code></pre>
-    </div>
-  </div>
+      <pre class="bg-light p-3 rounded text-start"><code>if (!require("pak", quietly = TRUE)) install.packages("pak")
+pak::pkg_install("massimoaria/tall")
 
-  <!-- Run TALL -->
-  <div class="mt-5 text-center aos-item" data-aos="fade-up">
-    <h5 class="fw-bold text-success mb-3 anchored">▶️ Run TALL</h5>
-    <pre class="bg-light p-3 rounded d-inline-block text-start"><code>library("tall")
+# Run TALL
+library(tall)
 tall()</code></pre>
+    </div>
   </div>
 </div>
 
 
-
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <footer class="site-footer">
