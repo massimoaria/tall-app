@@ -2,115 +2,218 @@
 title: ""
 format:
   html:
-    toc: false
+    toc: true
 page-layout: full
 ---
 
-# 🧪 Use Cases
+## 🧪 Use Cases
 
-This page showcases practical examples of how **TALL** can be used to explore and analyze text corpora across various domains. Each example illustrates a complete workflow — from data import to final interpretation — including optional use of **TALL AI** for insight generation.
+This page showcases practical examples of how **TALL** can be applied to real-world text corpora. Each case follows some phases of TALL workflow — from data import and preprocessing to insight generation and interpretation — enhanced by **TALL AI**.
 
----
+------------------------------------------------------------------------
 
-## 1. 🎬 BBC News (Entertainment Headlines)
+## 1. 🎬 BBC News
 
-**Goal**: Identify main topics and sentiment trends in news stories.
+**Goal**\
+Explore themes, vocabulary, and summarize information in entertainment news articles from the BBC.
 
-### Dataset  
-386 short articles from the *Entertainment* section of the BBC News website (English language).
+### 📄 Dataset
 
-### Workflow
+A curated collection of **386 short news stories** from the *Entertainment* section of BBC News (in English).
 
-1. **Import** BBC dataset from sample collection
-2. **Preprocess** with tokenization, lemmatization, and entity tagging
-3. **Explore** vocabulary: term frequency, wordcloud, KWIC for terms like "actor", "award"
-4. **Apply LDA** to detect latent topics (e.g., celebrity deaths, film reviews)
-5. **Visualize polarity** across articles using the Hu & Liu lexicon
-6. **Summarize** key articles using TextRank
+### 🔍 Workflow
 
-![BBC topic modeling](img/example-bbc-lda.png)
+1.  **Import** the dataset directly from TALL's built-in sample collections and write a brief description of data in the TALL AI box.
 
-**TALL AI Support**: Suggests meaningful topic labels and provides narrative interpretation of polarity trends.
+::: text-center
+<img src="images/usecases/bbc/bbc-import.png" alt="bbc import" style="max-width: 90%; height: auto; margin-top: 1rem;"/>
+:::
 
----
+2.  **Preprocess** using English-specific NLP pipeline: Tokenization & PoS tagging using the right language model.
+
+::: text-center
+<img src="images/usecases/bbc/bbc-tok.png" alt="bbc tok" style="max-width: 90%; height: auto; margin-top: 1rem;"/>
+:::
+
+3.  **Multi-word** automatically created using the RAKE algorithm. Then, all generated multiwords are included in the dataset.
+
+::: text-center
+<img src="images/usecases/bbc/bbc-mw.png" alt="bbc multi" style="max-width: 90%; height: auto; margin-top: 1rem;"/>
+:::
+
+4.  **PoS Selection**, including verbs, nouns, proper nouns, adjectives, and multi-words
+
+::: text-center
+<img src="images/usecases/bbc/bbc-pos.png" alt="bbc multi" style="max-width: 90%; height: auto; margin-top: 1rem;"/>
+:::
+
+5.  **Lexical Exploration** visualizing vocabulary through **wordcloud**
+
+::: text-center
+<img src="images/usecases/bbc/bbc-wc.png" alt="bbc wc" style="max-width: 90%; height: auto; margin-top: 1rem;"/>
+:::
+
+6.  Use **Word in context** for `"million dollar baby"` term and ask an to TALL AI an interpretation of results.
+
+::: text-center
+<img src="images/usecases/bbc/bbc-wic.png" alt="bbc wic" style="max-width: 100%; height: auto; margin-top: 1rem;"/>
+:::
+
+7.  **Topic Modeling**
+
+    -   Apply **LDA (Latent Dirichlet Allocation)** to detect latent topics and then ask to TALL AI a label for each topic.
+
+    ::: text-center
+    <img src="images/usecases/bbc/bbc-tm.png" alt="bbc tm" style="max-width: 100%; height: auto; margin-top: 1rem;"/>
+    :::
+
+8.  **Summarization**, using **TextRank** to generate concise summaries of a document providing the most relevant sentence
+
+::: text-center
+<img src="images/usecases/bbc/bbc-textrank.png" alt="bbc textrank" style="max-width:90%; height: auto; margin-top: 1rem;"/>
+:::
+
+------------------------------------------------------------------------
 
 ## 2. 📚 Bibliometrix Abstracts
 
-**Goal**: Extract conceptual structure and sentiment in bibliometric research.
+**Goal**\
+Analyze the conceptual landscape of scientific literature that references the **Bibliometrix** R package.
 
-### Dataset  
-444 scientific abstracts citing the *Bibliometrix* R package, with metadata (authors, year, journal).
+### 📄 Dataset
 
-### Workflow
+A corpus of **444 scientific abstracts** that cite *Bibliometrix*, enriched with metadata such as **authors**, **publication year**, and **journal name**. The abstracts have already been tokenized and POS tagged using tall.
 
-1. **Import** from `.bib` or Biblioshiny export
-2. **Tokenize + lemmatize** scientific vocabulary
-3. **Perform Correspondence Analysis (LCA)** to identify clusters of research themes
-4. **Apply Reinert Clustering** for topic segmentation
-5. **Build Co-occurrence Network** to map related concepts
-6. **Filter by metadata** (year, author, journal) for trend detection
+### 🔍 Workflow
 
-![Bibliometrix network](img/example-bibliometrix-network.png)
+1.  **Import** the .tall file. If the dataset has already been processed and exported from TALL, re-importing the .tall file will automatically restore the session and display a summary of all previously completed analytical steps.
 
-**TALL AI Support**: Describes main research trends and offers critical reflection on emerging clusters.
+::: text-center
+<img src="images/usecases/bibliometrix/bib-import.png" alt="bib import" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+::: 
 
----
+2.  **Filter** the abstracts to include only article published between **2017 and 2021**
 
-## 3. 🐦 US Airlines Tweets
+::: text-center
+<img src="images/usecases/bibliometrix/bib-filter.png" alt="bib filter" style="max-width:90%; height: auto; margin-top: 1rem;"/>
+::: 
 
-**Goal**: Understand customer feedback and emotions in airline-related tweets.
+3.  **Lexical and Structural Analysis** performing a **Co-Word network** to detect conceptual clusters and ask to TALL AI the interpretation.
 
-### Dataset  
-14,640 tweets about major U.S. airlines collected in February 2015.
+::: text-center
+<img src="images/usecases/bibliometrix/bib-cw.png" alt="bib cw" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+:::
 
-### Workflow
+::: text-center
+<img src="images/usecases/bibliometrix/bib-cwai.png" alt="bib cwai" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+::: 
 
-1. **Import CSV** file with raw tweets
-2. **Preprocess** with domain-specific PoS model (social media language)
-3. **Tag special entities** like `@mentions`, `#hashtags`, `emojis`
-4. **Run Sentiment Analysis** with NRC Emotion Lexicon
-5. **Build Ego Network** around key terms (e.g., “delay”, “service”)
-6. **Cluster topics** via LCA + hierarchical analysis
+------------------------------------------------------------------------
 
-![US Airlines sentiment](img/example-tweets-polarity.png)
+## 3. ✈️ US Airlines Tweets
 
-**TALL AI Support**: Interprets emotions and proposes thematic summaries of clusters (e.g., delays, praise, complaints).
+**Goal**: Understand customer feedback and emotional tone in airline-related conversations on Twitter.
 
----
+### 📄 Dataset
 
-## 4. 🧾 Wikipedia Pages (Custom Import)
+14.640 tweets mentioning major U.S. airlines, collected in February 2015. The dataset includes tweet content, airline names, and metadata such as time and location.
 
-**Goal**: Compare discourse structures across domains using open web sources.
+### 🔍 Workflow
 
-### Example  
-Import and compare Wikipedia pages about **climate change**, **sustainable tourism**, and **machine learning**.
+1. **Import** the raw CSV file directly into TALL  
 
-### Workflow
+::: text-center
+<img src="images/usecases/airline/air-import.png" alt="air import" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+::: 
 
-1. **Import Wikipedia pages** using title input
-2. **Preprocess and tag** lemmas and entities
-3. **Create term × document matrix**
-4. **Run LDA** and visualize dominant topics
-5. **Compare lexical richness and structure** across articles
+2. **Preprocess** the corpus using a domain-specific PoS tagging model trained on social media language  
 
-![Wikipedia comparison](img/example-wikipedia-comparison.png)
+::: text-center
+<img src="images/usecases/airline/air-tok.png" alt="air tok" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+::: 
 
-**TALL AI Support**: Identifies discursive strategies, labels overlapping themes, and suggests summary narratives.
+3. **Tag special entities** such as `@mentions`, `#hashtags`, and emojis for semantic enrichment  
 
----
+::: text-center
+<img src="images/usecases/airline/air-tse.png" alt="air tse" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+::: 
+
+4. **Build an Ego Network** around **#fail** hashtag, to identify co-occurring complaint patterns  
+
+::: text-center
+<img src="images/usecases/airline/air-wic.png" alt="air wic" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+:::
+
+5. **Perform Sentiment Analysis** using the NRC Emotion Lexicon to detect emotional polarity and dominant sentiments (e.g., anger, trust, fear)
+
+::: text-center
+<img src="images/usecases/airline/air-pol.png" alt="air pol" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+:::
+
+::: text-center
+<img src="images/usecases/airline/air-polai.png" alt="air polai" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+:::
+
+
+------------------------------------------------------------------------
+
+## 4. 🧾 Wikipedia Pages
+
+**Goal**: Discover sub-themes and semantic structures within machine learning content.
+
+### 📄 Dataset
+
+A collection of 15 Wikipedia pages related to **machine learning**, retrieved directly via TALL's import interface.
+
+### 🔍 Workflow
+
+1. **Import Wikipedia articles** from the integrated TALL module about `machine learning`.
+
+::: text-center
+<img src="images/usecases/wiki/wiki-import.png" alt="wiki import" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+:::
+
+2. **Generate multi-word expressions** using the RAKE algorithm to extract domain-relevant collocations.
+
+::: text-center
+<img src="images/usecases/wiki/wiki-mw.png" alt="wiki mw" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+:::
+
+3. **Explore lexical insights**, including document and sentence length, word frequency distribution, and wordcloud.
+
+::: text-center
+<img src="images/usecases/wiki/wiki-ov.png" alt="wiki overview" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+:::
+
+4. **Build a co-word network** to visualize thematic associations, with **TALL AI** support for identifying latent sub-themes in machine learning discourse.
+
+::: text-center
+<img src="images/usecases/wiki/wiki-cw.png" alt="wiki cw" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+:::
+
+5. **Apply topic modeling (LDA)** to extract six key topics and their representative terms, enriched by **TALL AI** interpretation and summary.
+
+::: text-center
+<img src="images/usecases/wiki/wiki-tm.png" alt="wiki tm" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+:::
+
+::: text-center
+<img src="images/usecases/wiki/wiki-tmai.png" alt="wiki tmai" style="max-width:90%; height: auto; margin-top: 1rem;"/> 
+:::
+
+
+------------------------------------------------------------------------
 
 ## ✨ Your Own Use Case
 
 TALL is flexible and scalable for use in:
 
-- Social science research  
-- Digital humanities  
-- Public policy analysis  
-- Journalism and media studies  
-- Education and learning analytics  
-- Marketing and brand sentiment monitoring
+-   Social science research\
+-   Digital humanities\
+-   Public policy analysis\
+-   Journalism and media studies\
+-   Education and learning analytics\
+-   Marketing and brand sentiment monitoring
 
-> Have a use case to share? [Contribute on GitHub](https://github.com/massimoaria/tall) or get in touch via the [About page](about_us.qmd).
-
-
+Have a use case to share? [Contribute on GitHub](https://github.com/massimoaria/tall) or get in touch via the [About page](about_us.qmd).
 
