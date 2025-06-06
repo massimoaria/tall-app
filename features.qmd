@@ -14,7 +14,7 @@ page-layout: full
 <img src="images/features/tall-key.png" alt="TALL Key" style="max-width: 80%; height: auto; margin-top: 1rem;" />
 :::
 
-To learn how to install TALL and explore its features in detail, visit the [**Documentation**](docs.qmd) page.
+To learn how to install TALL and explore its features in detail, visit the [**Documentation**](documentation.qmd) page.
 
 ------------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ To learn how to install TALL and explore its features in detail, visit the [**Do
 
 TALL now features **TALL AI**, a built-in artificial intelligence assistant designed to support users throughout their analytical journey. It bridges the gap between data and interpretation by offering:
 
--   🧠 **Automated interpretation** of statistical and lexical outputs\
+-   ⚙️ **Automated interpretation** of statistical and lexical outputs\
 -   💬 **Critical discussion prompts** based on emerging patterns and thematic clusters\
 -   🔍 **Conceptual guidance** across multiple analytical modules — including topic modeling, sentiment analysis, clustering, and more
 
@@ -192,5 +192,5 @@ These features ensure transparency, reproducibility, and ease of sharing across 
 Whether you're a linguist, data scientist, social researcher, educator, or simply curious about text analytics, **TALL** provides a robust and accessible environment to explore and interpret textual data — now enhanced with **AI-powered guidance**.
 
 Ready to start your journey into text analysis?  
-👉 [Get started now!](docs.qmd)
+👉 [**Get started now!**](download.qmd)
 

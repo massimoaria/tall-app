@@ -20,7 +20,7 @@ More than just an add-on, TALL AI serves as an interpretative layer between anal
 
 TALL AI supports users by delivering:
 
-- 🧠 **Automated interpretation** of statistical indicators, lexical patterns, and clustering structures  
+- ⚙️ **Automated interpretation** of statistical indicators, lexical patterns, and clustering structures  
 - 💬 **Critical discussion prompts**, suggesting meaningful hypotheses and encouraging reflection on emerging patterns  
 - 🔍 **Conceptual guidance** in modules such as topic modeling, sentiment and polarity analysis, lexical correspondence analysis, and network clustering  
 - 🧾 **Natural language summaries** of results and dashboards, written in clear and domain-relevant terms
@@ -93,7 +93,7 @@ In each of these areas, TALL AI transforms numerical output into actionable inte
 
 | ❌ **Without TALL AI**             | ✅ **With TALL AI**                               |
 |----------------------------------|--------------------------------------------------|
-| 📉 Raw tables and graphs          | 🧠 Interpreted patterns and conceptual summaries  |
+| 📉 Raw tables and graphs          | ⚙️ Interpreted patterns and conceptual summaries  |
 | 📊 Technical statistics           | 🧾 Explained indicators in plain language         |
 | 🧩 Trial-and-error topic labeling | 🏷️ Suggested and consistent cluster/topic labels  |
 | 🕵️‍♂️ Manual result interpretation | 💬 Guided reasoning and contextual insights       |
@@ -113,4 +113,4 @@ All interactions are **documented, optional, and reproducible**.
 
 ## TALL AI transforms results into insight ✨
 🔓Ready to unlock the power of AI-driven text interpretation?  
-👉 [**Start using TALL AI now**](docs.qmd)
+👉 [**Start using TALL AI now!**](download.qmd)

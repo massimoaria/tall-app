@@ -127,121 +127,230 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#use-cases" id="toc-use-cases" class="nav-link active" data-scroll-target="#use-cases">🧪 Use Cases</a></li>
+  <li><a href="#bbc-news" id="toc-bbc-news" class="nav-link" data-scroll-target="#bbc-news">1. 🎬 BBC News</a>
+  <ul class="collapse">
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">📄 Dataset</a></li>
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">🔍 Workflow</a></li>
+  </ul></li>
+  <li><a href="#bibliometrix-abstracts" id="toc-bibliometrix-abstracts" class="nav-link" data-scroll-target="#bibliometrix-abstracts">2. 📚 Bibliometrix Abstracts</a>
+  <ul class="collapse">
+  <li><a href="#dataset-1" id="toc-dataset-1" class="nav-link" data-scroll-target="#dataset-1">📄 Dataset</a></li>
+  <li><a href="#workflow-1" id="toc-workflow-1" class="nav-link" data-scroll-target="#workflow-1">🔍 Workflow</a></li>
+  </ul></li>
+  <li><a href="#us-airlines-tweets" id="toc-us-airlines-tweets" class="nav-link" data-scroll-target="#us-airlines-tweets">3. ✈️ US Airlines Tweets</a>
+  <ul class="collapse">
+  <li><a href="#dataset-2" id="toc-dataset-2" class="nav-link" data-scroll-target="#dataset-2">📄 Dataset</a></li>
+  <li><a href="#workflow-2" id="toc-workflow-2" class="nav-link" data-scroll-target="#workflow-2">🔍 Workflow</a></li>
+  </ul></li>
+  <li><a href="#wikipedia-pages" id="toc-wikipedia-pages" class="nav-link" data-scroll-target="#wikipedia-pages">4. 🧾 Wikipedia Pages</a>
+  <ul class="collapse">
+  <li><a href="#dataset-3" id="toc-dataset-3" class="nav-link" data-scroll-target="#dataset-3">📄 Dataset</a></li>
+  <li><a href="#workflow-3" id="toc-workflow-3" class="nav-link" data-scroll-target="#workflow-3">🔍 Workflow</a></li>
+  </ul></li>
+  <li><a href="#your-own-use-case" id="toc-your-own-use-case" class="nav-link" data-scroll-target="#your-own-use-case">✨ Your Own Use Case</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<section id="use-cases" class="level1">
-<h1>🧪 Use Cases</h1>
-<p>This page showcases practical examples of how <strong>TALL</strong> can be used to explore and analyze text corpora across various domains. Each example illustrates a complete workflow — from data import to final interpretation — including optional use of <strong>TALL AI</strong> for insight generation.</p>
+<section id="use-cases" class="level2">
+<h2 class="anchored" data-anchor-id="use-cases">🧪 Use Cases</h2>
+<p>This page showcases practical examples of how <strong>TALL</strong> can be applied to real-world text corpora. Each case follows some phases of TALL workflow — from data import and preprocessing to insight generation and interpretation — enhanced by <strong>TALL AI</strong>.</p>
 <hr>
-<section id="bbc-news-entertainment-headlines" class="level2">
-<h2 class="anchored" data-anchor-id="bbc-news-entertainment-headlines">1. 🎬 BBC News (Entertainment Headlines)</h2>
-<p><strong>Goal</strong>: Identify main topics and sentiment trends in news stories.</p>
+</section>
+<section id="bbc-news" class="level2">
+<h2 class="anchored" data-anchor-id="bbc-news">1. 🎬 BBC News</h2>
+<p><strong>Goal</strong><br>
+Explore themes, vocabulary, and summarize information in entertainment news articles from the BBC.</p>
 <section id="dataset" class="level3">
-<h3 class="anchored" data-anchor-id="dataset">Dataset</h3>
-<p>386 short articles from the <em>Entertainment</em> section of the BBC News website (English language).</p>
+<h3 class="anchored" data-anchor-id="dataset">📄 Dataset</h3>
+<p>A curated collection of <strong>386 short news stories</strong> from the <em>Entertainment</em> section of BBC News (in English).</p>
 </section>
 <section id="workflow" class="level3">
-<h3 class="anchored" data-anchor-id="workflow">Workflow</h3>
+<h3 class="anchored" data-anchor-id="workflow">🔍 Workflow</h3>
 <ol type="1">
-<li><strong>Import</strong> BBC dataset from sample collection</li>
-<li><strong>Preprocess</strong> with tokenization, lemmatization, and entity tagging</li>
-<li><strong>Explore</strong> vocabulary: term frequency, wordcloud, KWIC for terms like “actor”, “award”</li>
-<li><strong>Apply LDA</strong> to detect latent topics (e.g., celebrity deaths, film reviews)</li>
-<li><strong>Visualize polarity</strong> across articles using the Hu &amp; Liu lexicon</li>
-<li><strong>Summarize</strong> key articles using TextRank</li>
+<li><strong>Import</strong> the dataset directly from TALL’s built-in sample collections and write a brief description of data in the TALL AI box.</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/example-bbc-lda.png" class="img-fluid figure-img"></p>
-<figcaption>BBC topic modeling</figcaption>
-</figure>
+<div class="text-center">
+<p><img src="images/usecases/bbc/bbc-import.png" alt="bbc import" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
 </div>
-<p><strong>TALL AI Support</strong>: Suggests meaningful topic labels and provides narrative interpretation of polarity trends.</p>
+<ol start="2" type="1">
+<li><strong>Preprocess</strong> using English-specific NLP pipeline: Tokenization &amp; PoS tagging using the right language model.</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/bbc/bbc-tok.png" alt="bbc tok" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="3" type="1">
+<li><strong>Multi-word</strong> automatically created using the RAKE algorithm. Then, all generated multiwords are included in the dataset.</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/bbc/bbc-mw.png" alt="bbc multi" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="4" type="1">
+<li><strong>PoS Selection</strong>, including verbs, nouns, proper nouns, adjectives, and multi-words</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/bbc/bbc-pos.png" alt="bbc multi" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="5" type="1">
+<li><strong>Lexical Exploration</strong> visualizing vocabulary through <strong>word clouds</strong></li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/bbc/bbc-wc.png" alt="bbc wc" style="max-width: 90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="6" type="1">
+<li>Use <strong>Word in context</strong> for <code>"million dollar baby"</code> term and ask an to TALL AI an interpretation of results.</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/bbc/bbc-wic.png" alt="bbc wic" style="max-width: 100%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="7" type="1">
+<li><p><strong>Topic Modeling</strong></p>
+<ul>
+<li>Apply <strong>LDA (Latent Dirichlet Allocation)</strong> to detect latent topics and then ask to TALL AI a label for each topic.</li>
+</ul>
+<div class="text-center">
+<p><img src="images/usecases/bbc/bbc-tm.png" alt="bbc tm" style="max-width: 100%; height: auto; margin-top: 1rem;"></p>
+</div></li>
+<li><p><strong>Summarization</strong>, using <strong>TextRank</strong> to generate concise summaries of a document providing the most relevant sentence</p></li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/bbc/bbc-textrank.png" alt="bbc textrank" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 </section>
 <section id="bibliometrix-abstracts" class="level2">
 <h2 class="anchored" data-anchor-id="bibliometrix-abstracts">2. 📚 Bibliometrix Abstracts</h2>
-<p><strong>Goal</strong>: Extract conceptual structure and sentiment in bibliometric research.</p>
+<p><strong>Goal</strong><br>
+Analyze the conceptual landscape of scientific literature that references the <strong>Bibliometrix</strong> R package.</p>
 <section id="dataset-1" class="level3">
-<h3 class="anchored" data-anchor-id="dataset-1">Dataset</h3>
-<p>444 scientific abstracts citing the <em>Bibliometrix</em> R package, with metadata (authors, year, journal).</p>
+<h3 class="anchored" data-anchor-id="dataset-1">📄 Dataset</h3>
+<p>A corpus of <strong>444 scientific abstracts</strong> that cite <em>Bibliometrix</em>, enriched with metadata such as <strong>authors</strong>, <strong>publication year</strong>, and <strong>journal name</strong>. The abstracts have already been tokenized and POS tagged using tall.</p>
 </section>
 <section id="workflow-1" class="level3">
-<h3 class="anchored" data-anchor-id="workflow-1">Workflow</h3>
+<h3 class="anchored" data-anchor-id="workflow-1">🔍 Workflow</h3>
 <ol type="1">
-<li><strong>Import</strong> from <code>.bib</code> or Biblioshiny export</li>
-<li><strong>Tokenize + lemmatize</strong> scientific vocabulary</li>
-<li><strong>Perform Correspondence Analysis (LCA)</strong> to identify clusters of research themes</li>
-<li><strong>Apply Reinert Clustering</strong> for topic segmentation</li>
-<li><strong>Build Co-occurrence Network</strong> to map related concepts</li>
-<li><strong>Filter by metadata</strong> (year, author, journal) for trend detection</li>
+<li><strong>Import</strong> the .tall file. If the dataset has already been processed and exported from TALL, re-importing the .tall file will automatically restore the session and display a summary of all previously completed analytical steps.</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/example-bibliometrix-network.png" class="img-fluid figure-img"></p>
-<figcaption>Bibliometrix network</figcaption>
-</figure>
+<div class="text-center">
+<p><img src="images/usecases/bibliometrix/bib-import.png" alt="bib import" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
 </div>
-<p><strong>TALL AI Support</strong>: Describes main research trends and offers critical reflection on emerging clusters.</p>
+<ol start="2" type="1">
+<li><strong>Filter</strong> the abstracts to include only article published between <strong>2017 and 2021</strong></li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/bibliometrix/bib-filter.png" alt="bib filter" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="3" type="1">
+<li><strong>Lexical and Structural Analysis</strong> performing a <strong>Co-Ward network</strong> to detect conceptual clusters and ask to TALL AI the interpretation.</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/bibliometrix/bib-cw.png" alt="bib cw" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<div class="text-center">
+<p><img src="images/usecases/bibliometrix/bib-cwai.png" alt="bib cwai" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 </section>
 <section id="us-airlines-tweets" class="level2">
-<h2 class="anchored" data-anchor-id="us-airlines-tweets">3. 🐦 US Airlines Tweets</h2>
-<p><strong>Goal</strong>: Understand customer feedback and emotions in airline-related tweets.</p>
+<h2 class="anchored" data-anchor-id="us-airlines-tweets">3. ✈️ US Airlines Tweets</h2>
+<p><strong>Goal</strong>: Understand customer feedback and emotional tone in airline-related conversations on Twitter.</p>
 <section id="dataset-2" class="level3">
-<h3 class="anchored" data-anchor-id="dataset-2">Dataset</h3>
-<p>14,640 tweets about major U.S. airlines collected in February 2015.</p>
+<h3 class="anchored" data-anchor-id="dataset-2">📄 Dataset</h3>
+<p>14.640 tweets mentioning major U.S. airlines, collected in February 2015. The dataset includes tweet content, airline names, and metadata such as time and location.</p>
 </section>
 <section id="workflow-2" class="level3">
-<h3 class="anchored" data-anchor-id="workflow-2">Workflow</h3>
+<h3 class="anchored" data-anchor-id="workflow-2">🔍 Workflow</h3>
 <ol type="1">
-<li><strong>Import CSV</strong> file with raw tweets</li>
-<li><strong>Preprocess</strong> with domain-specific PoS model (social media language)</li>
-<li><strong>Tag special entities</strong> like <code>@mentions</code>, <code>#hashtags</code>, <code>emojis</code></li>
-<li><strong>Run Sentiment Analysis</strong> with NRC Emotion Lexicon</li>
-<li><strong>Build Ego Network</strong> around key terms (e.g., “delay”, “service”)</li>
-<li><strong>Cluster topics</strong> via LCA + hierarchical analysis</li>
+<li><strong>Import</strong> the raw CSV file directly into TALL</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/example-tweets-polarity.png" class="img-fluid figure-img"></p>
-<figcaption>US Airlines sentiment</figcaption>
-</figure>
+<div class="text-center">
+<p><img src="images/usecases/airline/air-import.png" alt="air import" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
 </div>
-<p><strong>TALL AI Support</strong>: Interprets emotions and proposes thematic summaries of clusters (e.g., delays, praise, complaints).</p>
+<ol start="2" type="1">
+<li><strong>Preprocess</strong> the corpus using a domain-specific PoS tagging model trained on social media language</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/airline/air-tok.png" alt="air tok" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="3" type="1">
+<li><strong>Tag special entities</strong> such as <code>@mentions</code>, <code>#hashtags</code>, and emojis for semantic enrichment</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/airline/air-tse.png" alt="air tse" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="4" type="1">
+<li><strong>Build an Ego Network</strong> around <strong>#fail</strong> hashtag, to identify co-occurring complaint patterns</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/airline/air-wic.png" alt="air wic" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="5" type="1">
+<li><strong>Perform Sentiment Analysis</strong> using the NRC Emotion Lexicon to detect emotional polarity and dominant sentiments (e.g., anger, trust, fear)</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/airline/air-pol.png" alt="air pol" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<div class="text-center">
+<p><img src="images/usecases/airline/air-polai.png" alt="air polai" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 </section>
-<section id="wikipedia-pages-custom-import" class="level2">
-<h2 class="anchored" data-anchor-id="wikipedia-pages-custom-import">4. 🧾 Wikipedia Pages (Custom Import)</h2>
-<p><strong>Goal</strong>: Compare discourse structures across domains using open web sources.</p>
-<section id="example" class="level3">
-<h3 class="anchored" data-anchor-id="example">Example</h3>
-<p>Import and compare Wikipedia pages about <strong>climate change</strong>, <strong>sustainable tourism</strong>, and <strong>machine learning</strong>.</p>
+<section id="wikipedia-pages" class="level2">
+<h2 class="anchored" data-anchor-id="wikipedia-pages">4. 🧾 Wikipedia Pages</h2>
+<p><strong>Goal</strong>: Discover sub-themes and semantic structures within machine learning content.</p>
+<section id="dataset-3" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-3">📄 Dataset</h3>
+<p>A collection of 15 Wikipedia pages related to <strong>machine learning</strong>, retrieved directly via TALL’s import interface.</p>
 </section>
 <section id="workflow-3" class="level3">
-<h3 class="anchored" data-anchor-id="workflow-3">Workflow</h3>
+<h3 class="anchored" data-anchor-id="workflow-3">🔍 Workflow</h3>
 <ol type="1">
-<li><strong>Import Wikipedia pages</strong> using title input</li>
-<li><strong>Preprocess and tag</strong> lemmas and entities</li>
-<li><strong>Create term × document matrix</strong></li>
-<li><strong>Run LDA</strong> and visualize dominant topics</li>
-<li><strong>Compare lexical richness and structure</strong> across articles</li>
+<li><strong>Import Wikipedia articles</strong> from the integrated TALL module about <code>machine learning</code>.</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/example-wikipedia-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Wikipedia comparison</figcaption>
-</figure>
+<div class="text-center">
+<p><img src="images/usecases/wiki/wiki-import.png" alt="wiki import" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
 </div>
-<p><strong>TALL AI Support</strong>: Identifies discursive strategies, labels overlapping themes, and suggests summary narratives.</p>
+<ol start="2" type="1">
+<li><strong>Generate multi-word expressions</strong> using the RAKE algorithm to extract domain-relevant collocations.</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/wiki/wiki-mw.png" alt="wiki mw" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="3" type="1">
+<li><strong>Explore lexical insights</strong>, including document and sentence length, word frequency distribution, and keyword clouds.</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/wiki/wiki-ov.png" alt="wiki overview" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="4" type="1">
+<li><strong>Build a co-word network</strong> to visualize thematic associations, with <strong>TALL AI</strong> support for identifying latent sub-themes in machine learning discourse.</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/wiki/wiki-cw.png" alt="wiki cw" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<ol start="5" type="1">
+<li><strong>Apply topic modeling (LDA)</strong> to extract six key topics and their representative terms, enriched by <strong>TALL AI</strong> interpretation and summary.</li>
+</ol>
+<div class="text-center">
+<p><img src="images/usecases/wiki/wiki-tm.png" alt="wiki tm" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
+<div class="text-center">
+<p><img src="images/usecases/wiki/wiki-tmai.png" alt="wiki tmai" style="max-width:90%; height: auto; margin-top: 1rem;"></p>
+</div>
 <hr>
 </section>
 </section>
@@ -261,12 +370,9 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li>Marketing and brand sentiment monitoring</li>
 </ul>
-<blockquote class="blockquote">
 <p>Have a use case to share? <a href="https://github.com/massimoaria/tall">Contribute on GitHub</a> or get in touch via the <a href="./about_us.html">About page</a>.</p>
-</blockquote>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
